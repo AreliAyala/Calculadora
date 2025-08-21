@@ -11,7 +11,7 @@ def calcular(op):
             resultado.set(num1 - num2)
     except ValueError:
         resultado.set("Error")
-def multiplicar(op):
+def mult_div(op):
     try:
         num1 = float(entry1.get())
         num2 = float(entry2.get())
