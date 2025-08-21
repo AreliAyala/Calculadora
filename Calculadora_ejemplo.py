@@ -35,10 +35,10 @@ entry2 = tk.Entry(ventana)
 entry2.pack(pady=5)
 
 # Botones
-tk.Button(ventana, text="Sumar", command=lambda: calcular("+")).pack(pady=5)
-tk.Button(ventana, text="Restar", command=lambda: calcular("-")).pack(pady=5)
-tk.Button(ventana, text="Multiplicar", command=lambda: multiplicar("*")).pack(pady=5)
-tk.Button(ventana, text="Dividir", command=lambda: multiplicar("/")).pack(pady=5)
+tk.Button(ventana, bg="blue", text="Sumar", command=lambda: calcular("+")).pack(pady=5)
+tk.Button(ventana, bg="green",text="Restar", command=lambda: calcular("-")).pack(pady=5)
+tk.Button(ventana, bg="lightblue", text="Multiplicar", command=lambda: multiplicar("*")).pack(pady=5)
+tk.Button(ventana, bg="lightgreen", text="Dividir", command=lambda: multiplicar("/")).pack(pady=5)
 
 # Resultado
 resultado = tk.StringVar()
