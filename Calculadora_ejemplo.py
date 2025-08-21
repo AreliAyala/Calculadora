@@ -24,6 +24,7 @@ def mult_div(op):
 
 # Crear ventana
 ventana = tk.Tk()
+ventana.configure(bg="#e0ccd1")  # Color de fondo
 ventana.title("Mi calculadora")
 ventana.geometry("300x200")  # Tamaño de la ventana
 
