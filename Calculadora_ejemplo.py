@@ -11,10 +11,21 @@ def calcular(op):
             resultado.set(num1 - num2)
     except ValueError:
         resultado.set("Error")
+def multiplicar(op):
+    try:
+        num1 = float(entry1.get())
+        num2 = float(entry2.get())
+        if op == "*":
+            resultado.set(num1 * num2)
+        elif op == "/":
+            resultado.set(num1 / num2)
+    except ValueError:
+        resultado.set("Error")
 
 # Crear ventana
 ventana = tk.Tk()
-ventana.title("Calculadora simple")
+ventana.title("Mi calculadora")
+ventana.geometry("300x200")  # Tamaño de la ventana
 
 # Entradas
 entry1 = tk.Entry(ventana)
@@ -26,6 +37,8 @@ entry2.pack(pady=5)
 # Botones
 tk.Button(ventana, text="Sumar", command=lambda: calcular("+")).pack(pady=5)
 tk.Button(ventana, text="Restar", command=lambda: calcular("-")).pack(pady=5)
+tk.Button(ventana, text="Multiplicar", command=lambda: multiplicar("*")).pack(pady=5)
+tk.Button(ventana, text="Dividir", command=lambda: multiplicar("/")).pack(pady=5)
 
 # Resultado
 resultado = tk.StringVar()
