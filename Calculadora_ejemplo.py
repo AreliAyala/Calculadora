@@ -38,8 +38,8 @@ entry2.pack(pady=5)
 # Botones
 tk.Button(ventana, bg="lightpink", text="Sumar", command=lambda: calcular("+")).pack(pady=5)
 tk.Button(ventana, bg="lightpink",text="Restar", command=lambda: calcular("-")).pack(pady=5)
-tk.Button(ventana, bg="lightpink", text="Multiplicar", command=lambda: multiplicar("*")).pack(pady=5)
-tk.Button(ventana, bg="lightpink", text="Dividir", command=lambda: multiplicar("/")).pack(pady=5)
+tk.Button(ventana, bg="lightpink", text="Multiplicar", command=lambda: mult_div("*")).pack(pady=5)
+tk.Button(ventana, bg="lightpink", text="Dividir", command=lambda: mult_div("/")).pack(pady=5)
 
 # Resultado
 resultado = tk.StringVar()
