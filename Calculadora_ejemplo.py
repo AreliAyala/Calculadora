@@ -59,8 +59,8 @@ frame_pack = tk.Frame(ventana)
 frame_pack.pack(pady=10)
 tk.Button(ventana, bg="lightpink", text="Sumar", command=lambda: calcular("+")).pack(pady=5)
 tk.Button(ventana, bg="lightpink",text="Restar", command=lambda: calcular("-")).pack(pady=5)
-tk.Button(ventana, bg="lightpink", text="Multiplicar", command=lambda: mult_div("*")).pack(pady=5)
 tk.Button(ventana, bg="lightpink", text="Dividir", command=lambda: mult_div("/")).pack(pady=5)
+tk.Button(ventana, bg="lightpink", text="Multiplicar", command=lambda: mult_div("*")).pack(pady=5)
 tk.Button(ventana, bg="lightpink", text="Factorial de ambos números", command=lambda: factorial("!")).pack(pady=5)
 
 # Resultado
