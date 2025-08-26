@@ -39,19 +39,24 @@ def factorial(op):
     except ValueError:
         resultado.set("Error")
 # Crear ventana
+
 ventana = tk.Tk()
+frame_grid = tk.Frame(ventana)
+frame_grid.pack(pady=10)
 ventana.configure(bg="#e0ccd1")  # Color de fondo
 ventana.title("Mi calculadora")
 ventana.geometry("300x350")  # Tamaño de la ventana
 
 # Entradas
-entry1 = tk.Entry(ventana)
-entry1.pack(pady=5)
+entry1 = tk.Entry(frame_grid)
+entry1.grid(row=0, column=0,sticky="e", padx=5, pady=5)
 
-entry2 = tk.Entry(ventana)
-entry2.pack(pady=5)
+entry2 = tk.Entry(frame_grid)
+entry2.grid(row=0, column=1,sticky="e", padx=5, pady=5)
 
 # Botones
+frame_pack = tk.Frame(ventana)
+frame_pack.pack(pady=10)
 tk.Button(ventana, bg="lightpink", text="Sumar", command=lambda: calcular("+")).pack(pady=5)
 tk.Button(ventana, bg="lightpink",text="Restar", command=lambda: calcular("-")).pack(pady=5)
 tk.Button(ventana, bg="lightpink", text="Multiplicar", command=lambda: mult_div("*")).pack(pady=5)
@@ -60,6 +65,6 @@ tk.Button(ventana, bg="lightpink", text="Factorial de ambos números", command=l
 
 # Resultado
 resultado = tk.StringVar()
-tk.Label(ventana, textvariable=resultado).pack(pady=5)
+tk.Label(ventana, textvariable=resultado).pack(pady=20)
 
 ventana.mainloop()
