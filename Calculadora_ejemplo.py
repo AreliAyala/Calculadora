@@ -37,7 +37,7 @@ def factorial(op):
                     fact2 *= j
                 resultado.set(f"{num1}!= {fact1}.                     {num2}!= {fact2}.")
     except ValueError:
-        resultado.set("Error")
+        resultado.set("Error, los números deben ser enteros")
 # Crear ventana
 
 ventana = tk.Tk()
@@ -57,11 +57,11 @@ entry2.grid(row=0, column=1,sticky="e", padx=5, pady=5)
 # Botones
 frame_pack = tk.Frame(ventana)
 frame_pack.pack(pady=10)
-tk.Button(ventana, bg="lightpink", text="Sumar", command=lambda: calcular("+")).pack(pady=5)
-tk.Button(ventana, bg="lightpink",text="Restar", command=lambda: calcular("-")).pack(pady=5)
-tk.Button(ventana, bg="lightpink", text="Dividir", command=lambda: mult_div("/")).pack(pady=5)
-tk.Button(ventana, bg="lightpink", text="Multiplicar", command=lambda: mult_div("*")).pack(pady=5)
-tk.Button(ventana, bg="lightpink", text="Factorial de ambos números", command=lambda: factorial("!")).pack(pady=5)
+tk.Button(ventana, bg="#FFFEFF", text="Sumar", command=lambda: calcular("+")).pack(pady=5)
+tk.Button(ventana, bg="#EDA2F5",text="Restar", command=lambda: calcular("-")).pack(pady=5)
+tk.Button(ventana, bg="#F783F7", text="Dividir", command=lambda: mult_div("/")).pack(pady=5)
+tk.Button(ventana, bg="#BD57F8", text="Multiplicar", command=lambda: mult_div("*")).pack(pady=5)
+tk.Button(ventana, bg="#C505E3", text="Factorial de ambos números", command=lambda: factorial("!")).pack(pady=5)
 
 # Resultado
 resultado = tk.StringVar()
