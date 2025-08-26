@@ -15,7 +15,3 @@ Esta es una calculadora gráfica desarrollada con **Python y Tkinter**, que perm
 
 La interfaz está construida con `Frames` que combinan `grid()` y `pack()` para lograr una distribución limpia y modular. Se utilizan colores personalizados para mejorar la experiencia visual.
 
-## 📸 Captura de pantalla
-
-```markdown
-![Captura de pantalla de la calculadora](Mi_calculadora.png)
